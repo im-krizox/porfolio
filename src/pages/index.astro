@@ -9,62 +9,49 @@ import ProfileCheck from "@/components/icons/ProfileCheck.astro"
 import Projects from "@/components/Projects.astro"
 import SectionContainer from "@/components/SectionContainer.astro"
 import Hero from "@/components/Hero.astro"
-import Education from "@/components/Education.astro"
-import School from "@/components/icons/School.astro"
+import TitleSection from "@/components/TitleSection.astro"
 ---
 
 <Layout
-  title="Porfolio de Kris - Desarrollador y Programador Web"
-  description="Contratame para crear tu aplicación web o móvil. Desarrollador Web. Especializado en crear aplicaciones únicas."
+  title="Portafolio de Kris - Desarrollador y Programador Web en proceso"
+  description="Hola, soy Kris, un apasionado del desarrollo web y la programación. Aquí encontrarás mi portafolio con proyectos y experiencias que reflejan mi trayectoria en el mundo del código."
 >
   <main class="px-4">
+    <!-- Hero -->
     <SectionContainer id="inicio" class="py-16 md:py-36">
       <Hero>
       </slot>
     </Hero>
     </SectionContainer>
     <div class="space-y-24">
-    
-    <!-- Experiencia laboral
+
+    <!-- Experiencia -->
+    <!--
     <SectionContainer id="experiencia">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
-      >
-        <Briefcase class="size-8" />
-        Experiencia laboral
-      </h2>
+      <TitleSection>
+      <Briefcase class="size-8" />
+      Experiencia laboral
+      </TitleSection>
       <Experience />
     </SectionContainer>
     -->
 
+    <!-- Proyectos -->
     <SectionContainer id="proyectos">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
-      >
+      <TitleSection>
         <CodeIcon class="size-7" />
         Proyectos
-      </h2>
+      </TitleSection>
       <Projects />
     </SectionContainer>
 
+    <!-- Sobre mí -->
     <SectionContainer id="sobre-mi">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
-      >
+      <TitleSection>
         <ProfileCheck class="size-8" />
         Sobre mí
-      </h2>
+      </TitleSection>
       <AboutMe />
-    </SectionContainer>
-
-    <SectionContainer id="educacion">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
-      >
-        <School class="size-8" />
-        Educación
-      </h2>
-      <Education />
     </SectionContainer>
   </div>
   </main>

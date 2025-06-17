@@ -5,8 +5,10 @@ import AboutMe from "@/components/AboutMe.astro"
 import Briefcase from "@/components/icons/Briefcase.astro"
 import CodeIcon from "@/components/icons/Code.astro"
 import Experience from "@/components/Experience.astro"
+import Education from "@/components/Education.astro"
 import ProfileCheck from "@/components/icons/ProfileCheck.astro"
 import Projects from "@/components/Projects.astro"
+import School from "@/components/icons/School.astro"
 import SectionContainer from "@/components/SectionContainer.astro"
 import Hero from "@/components/Hero.astro"
 import TitleSection from "@/components/TitleSection.astro"
@@ -48,10 +50,19 @@ import TitleSection from "@/components/TitleSection.astro"
     <!-- Sobre mí -->
     <SectionContainer id="sobre-mi">
       <TitleSection>
-        <ProfileCheck class="size-8" />
+        <ProfileCheck class="size-7" />
         Sobre mí
       </TitleSection>
       <AboutMe />
+    </SectionContainer>
+
+    <!-- Educación -->
+    <SectionContainer id="educacion">
+      <TitleSection>
+        <School class="size-7" />
+        Educación
+      </TitleSection>
+      <Education />
     </SectionContainer>
   </div>
   </main>
